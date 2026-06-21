@@ -48,7 +48,7 @@ export default function Header({ cartItems, onOpenCart }) {
           <img src="/images/ehuen/logo-ehuen.jpg" alt="Logo de Ehuen" />
           <span>
             <strong>Ehuen Burger</strong>
-            <small>{business.tagline}</small>
+            <small>{business.mode}</small>
           </span>
         </a>
         <div className="header-actions">
@@ -68,7 +68,7 @@ export default function Header({ cartItems, onOpenCart }) {
               <img src="/images/ehuen/logo-ehuen.jpg" alt="Logo de Ehuen" />
               <div>
                 <strong>{business.name}</strong>
-                <p>{business.tagline}</p>
+                <p>{business.mode}</p>
               </div>
               <button type="button" onClick={closeMenu} aria-label="Cerrar menú">
                 X

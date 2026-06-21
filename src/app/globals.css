@@ -497,8 +497,12 @@ img {
 
 .product-image {
   background: var(--blue);
+  border: 0;
+  cursor: pointer;
   min-height: 138px;
+  padding: 0;
   position: relative;
+  text-align: inherit;
 }
 
 .product-image > img,

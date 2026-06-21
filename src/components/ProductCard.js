@@ -6,10 +6,15 @@ export default function ProductCard({ product, onAdd }) {
 
   return (
     <article className={`product-card ${product.recommended ? "recommended" : ""}`}>
-      <div className="product-image">
+      <button
+        className="product-image"
+        type="button"
+        onClick={() => onAdd(product)}
+        aria-label={`Ver detalle de ${product.name}`}
+      >
         <ProductMedia product={product} />
         {product.recommended ? <span className="recommended-badge">Recomendada</span> : null}
-      </div>
+      </button>
       <div className="product-info">
         <div>
           <h3>{product.name}</h3>
